@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminus Math Solver</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Select your variables:</h1>
+    <h3 id="status"></h3>
+
+    <table id="imgTable">
+        <tr>
+            <td><img src="images/0.png" alt=0 onclick="selectImage(this)"/></td>
+            <td><img src="images/10.png" alt=10 onclick="selectImage(this)"/></td>
+            <td><img src="images/11.png" alt=11 onclick="selectImage(this)"/></td>
+        </tr>
+        <tr>
+            <td><img src="images/20.png" alt=20 onclick="selectImage(this)"/></td>
+            <td><img src="images/21.png" alt=21 onclick="selectImage(this)"/></td>
+            <td><img src="images/22.png" alt=22 onclick="selectImage(this)"/></td>
+        </tr>
+    </table>
+
+    <table id="showVariablesTable">
+        <td><p id="showX"></p></td>
+        <td><p id="showY"></p></td>
+        <td><p id="showZ"></p></td>
+    </table>
+
+    <button id="submitButton" onclick="submitSelection()">Submit</button>
+    <button id="clearButton" onclick="clearSelection()">Clear</button>
+
+    <h2>Results:</h2>
+
+    <table id="resultTable" border="1">
+      <tr>
+        <td><h3 id="result1"></h3></td>>
+        <td><h3 id="result2"></h3></td>
+        <td><h3 id="result3"></h3></td>
+      </tr>
+    </table>
+
+    <script src="solver.js"></script>
+</body>
+</html>
